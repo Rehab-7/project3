@@ -16,7 +16,8 @@ http://ec2-54-93-181-252.eu-central-1.compute.amazonaws.com
 - donwlod the key for acount page
 - connect the ```
 ssh-i ~/.ssh/your_key.pem aubuntu@4.93.181.252```
--login as root ``root@[ip-your-private-ip]:$``
+-login as root `` sudo su- 
+root@ip-172-26-0-170:~#``
 - adduser grder and give grader superuser
 - ``sudo nano /etc/sudoers.d/grader`` add ``grader ALL=(ALL:ALL)ALL`` and save it 
 - ``apt-get ubdate
