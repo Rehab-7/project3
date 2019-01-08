@@ -16,7 +16,7 @@ http://ec2-54-93-181-252.eu-central-1.compute.amazonaws.com
 - donwlod the key for acount page
 - connect the ```
 ssh-i ~/.ssh/your_key.pem aubuntu@4.93.181.252```
--login as root
+-login as root ``root@[ip-your-private-ip]:$``
 - adduser grder and give grader superuser
 - ``sudo nano /etc/sudoers.d/grader`` add ``grader ALL=(ALL:ALL)ALL`` and save it 
 - ``apt-get ubdate
@@ -36,6 +36,7 @@ apt-get auto remove``
 -login as grader
 ``ssh -i ~/.ssh/name_of_key.rsa grader@54.93.181.252``
 - ``sudo nano /etc/ssh/sshd-config``
+- now we login grader as ``grader@ip-172-26-0-170:$``
 - change passwordAuthentication to no 
 - change port 22 to 2200
 - for permitRoot Login change prohibit-password to no 
