@@ -16,25 +16,25 @@ http://ec2-54-93-181-252.eu-central-1.compute.amazonaws.com
 - donwlod the key for acount page
 - connect the ```
 ssh-i ~/.ssh/your_key.pem aubuntu@4.93.181.252```
--login as root `` sudo su- 
-root@ip-172-26-0-170:~#``
+-login as root `` sudo su- ``
+- ist lkie thise ``root@ip-172-26-0-170:~#``
 - adduser grder and give grader superuser
 - ``sudo nano /etc/sudoers.d/grader`` add ``grader ALL=(ALL:ALL)ALL`` and save it 
 - ``apt-get ubdate
 apt-get upgrader
 apt-get auto remove``
 - in new tirminal run ``ssh-keygen -f ~/.ssh/name_of_key.rsa``
-- copy public key then 
+- copy public key then back to ternimal server 
 ``mkdir .ssh
 ``
-``toush .ssh/authorized_keys`` in /home/grader
+``toush .ssh/authorized_keys`` in  llocat the folder /home/grader
 - after that past public key into authorized_keys
 - change permissions
 ``chmod 700 /home/grader/.ssh``
 ``chmod 644 /home/grader/.ssh/authorized_keys``
 ``chown -R grader:grader /home/grader/.ssh`` to change owner of ssh folder
-- logout server 
--login as grader
+- logout root and server 
+-now login as grader
 ``ssh -i ~/.ssh/name_of_key.rsa grader@54.93.181.252``
 - ``sudo nano /etc/ssh/sshd-config``
 - now we login grader as ``grader@ip-172-26-0-170:$``
